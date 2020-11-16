@@ -1,0 +1,17 @@
+{
+    "name": "Premier Leaguage App",
+    "short_name": "Premier Leaguage",
+    "description": "Premier Leaguage App Submision 2",
+    "start_url": "/index.html",
+    "gcm_sender_id" : "564582556080",
+    "display": "standalone",
+    "background_color": "#00897B",
+    "theme_color": "#00897B",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
