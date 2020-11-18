@@ -11,7 +11,7 @@ function saveForLater(article) {
         var tx = db.transaction("articles", "readwrite");
         var store = tx.objectStore("articles");
         console.log(article);
-        store.add(article);
+        store.put(article);
         return tx.complete;
       })
       .then(function() {

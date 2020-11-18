@@ -17,10 +17,14 @@ workbox.precaching.precacheAndRoute([
     { url: '/js/api.js', revision: '1' },
     { url: '/js/idb.js', revision: '1' },
     { url: '/js/db.js', revision: '1' },
+    { url: '/sw2.js', revision: '1' },
     { url: '/icon.png', revision: '1' },
+    { url: '/icon192.png', revision: '1' },
     { url: '/js/materialize.min.js', revision: '1' },
     { url: '/css/materialize.min.css', revision: '1' },
-]);
+],{
+    ignoreUrlParametersMatching: [/.*/]
+});
 workbox.routing.registerRoute(
   new RegExp('https://api.football-data.org/v2/'),
   workbox.strategies.staleWhileRevalidate({
